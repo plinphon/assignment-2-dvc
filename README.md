@@ -1,5 +1,5 @@
-# Lesson 1 tutorial: Get started 
-**Machine Learning REPA community tutorial**: Get started with Data Version Control (DVC)
+# Tutorial: Get started with Data Version Control (DVC)
+**Machine Learning REPA community tutorial**
 
 ## 1. Clone this repository
 
