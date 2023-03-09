@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  featurize:
+    cmd: python src/featurize.py
+    deps:
+    - path: data/iris.csv
+      md5: 4d301abed5efe50eccda350cde38e0eb
+      size: 2777
+    - path: src/featurize.py
+      md5: 4402c8d5c17ad9f7805ac1d3d2fa9f7b
+      size: 683
+    outs:
+    - path: data/features_iris.csv
+      md5: 4224576f0267bf88902f87f0f6200967
+      size: 2757
