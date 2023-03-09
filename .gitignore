@@ -21,13 +21,14 @@ models/*
 ## Configs
 .env
 config/*.json
-/hymenoptera_data
-/cats-dogs
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*$py.classdvc get https://github.com/iterative/dataset-registry \
+          use-cases/cats-dogs
+
 
 # C extensions
 *.so
