@@ -1,5 +1,5 @@
 # Lesson 1 tutorial: Get started 
-**ML REPA School course**: Machine Learning experiments reproducibility and engineering with DVC
+**Machine Learning REPA community tutorial**: Get started with Data Version Control (DVC)
 
 ## 1. Clone this repository
 
@@ -40,42 +40,3 @@ jupyter nbextension enable toc2/main
 ```bash
 jupyter notebook
 ```
-
-
-## DVC pipeline 
-```yaml 
-
-stages:
-  
-  evaluate: 
-    cmd: python src/featurize.py
-    deps:
-    - data/iris.csv
-    - src/featurize.py
-    outs:
-    - data/features_iris.csv
-  
-  split_dataset: 
-    cmd: python src/split_dataset.py
-    deps:
-    - data/features_iris.csv
-    outs:
-    - data/train.csv
-    - data/test.csv
-    
-  train: 
-    cmd: python src/train.py
-    deps:
-    - data/train.csv
-    outs:
-    - data/model.joblib
-
-  evaluate: 
-    cmd: python src/evaluate.py
-    deps:
-    - data/model.joblib
-    - data/test.csv
-    outs:
-    - data/eval.txt
-
-```  
