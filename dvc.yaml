@@ -1,0 +1,8 @@
+stages:
+  featurize: 
+    cmd: python src/featurize.py
+    deps:
+    - data/iris.csv
+    - src/featurize.py
+    outs:
+    - data/features_iris.csv

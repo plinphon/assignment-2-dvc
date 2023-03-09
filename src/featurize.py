@@ -22,4 +22,4 @@ if __name__ == '__main__':
     dataset = pd.read_csv('data/iris.csv')
 
     features  = get_features(dataset)
-    features.to_csv('data/iris_featurized.csv', index=False)
+    features.to_csv('data/features_iris.csv', index=False)
