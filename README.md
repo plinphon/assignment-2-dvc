@@ -67,7 +67,6 @@ stages:
     cmd: python src/train.py
     deps:
     - data/train.csv
-    - data/test.csv
     outs:
     - data/model.joblib
 
@@ -75,6 +74,7 @@ stages:
     cmd: python src/evaluate.py
     deps:
     - data/model.joblib
+    - data/test.csv
     outs:
     - data/eval.txt
 
