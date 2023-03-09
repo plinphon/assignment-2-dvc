@@ -10,7 +10,7 @@ if __name__ == '__main__':
     arg_parser.add_argument('--test_size', type=float)
     args = arg_parser.parse_args()
     
-    dataset = pd.read_csv('data/iris_featurized.csv')
+    dataset = pd.read_csv('data/features_iris.csv')
     
     # Split in train/test
 
