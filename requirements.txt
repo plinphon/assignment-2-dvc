@@ -1,7 +1,4 @@
-dvc==2.46.0
-pandas==1.4.2
-scikit-learn==1.0.2
-joblib==1.1.0
-jupyter==1.0.0
-jupyter_contrib_nbextensions==0.5.1
-ipykernel==6.13.0
+dvc==2.57.0
+pandas==2.0.1
+scikit-learn==1.2.2
+joblib==1.2.0
