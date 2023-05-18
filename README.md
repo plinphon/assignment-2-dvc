@@ -1,9 +1,8 @@
 # Tutorial: Get started with Data Version Control (DVC)
-**Machine Learning REPA community tutorial**
 
 ## 1. Create and activate virtual environment
 
-Create virtual environment named `dvc` (you may use other name)
+Create virtual environment
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
