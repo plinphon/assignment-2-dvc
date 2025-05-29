@@ -11,6 +11,7 @@ setup-hooks: ## Install pre-commit hooks
 
 install: ## Install dependencies
 	uv sync --group dev
+	uv run pre-commit install
 
 pre-commit: ## Run pre-commit on all files
 	uv run pre-commit run --all-files
