@@ -1,5 +1,27 @@
+import pandas as pd
 from sklearn.datasets import load_iris
 
-data = load_iris(as_frame=True)
-list(data.target_names)
-data.frame.to_csv('data/iris.csv', index=False)
+
+def get_features(dataset: pd.DataFrame) -> pd.DataFrame:
+    features = dataset.copy()
+    # Rename columns: replace (cm) and spaces
+    features.rename(
+        columns=lambda s: s.replace("(cm)", "").strip().replace(" ", "_"), inplace=True
+    )
+
+    # Uncomment to add features
+    # features['sepal_length_to_sepal_width'] = features['sepal_length'] / features['sepal_width']
+    # features['petal_length_to_petal_width'] = features['petal_length'] / features['petal_width']
+
+    return features
+
+
+if __name__ == "__main__":
+    # Load the iris dataset
+    iris_data = load_iris(as_frame=True)
+    print(list(iris_data.target_names))
+
+    # Get the feature DataFrame from the iris dataset
+    dataset = iris_data.frame
+    features = get_features(dataset)
+    features.to_csv("data/features_iris.csv", index=False)
