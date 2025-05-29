@@ -73,7 +73,7 @@ Ensure you have the following installed on your system:
 
     ```bash
     git clone <YOUR_REPOSITORY_URL>
-    cd mlops-iris-project
+    cd mlops-starter-project-iris
     ```
 
 2. **Set Up Python Environment**
