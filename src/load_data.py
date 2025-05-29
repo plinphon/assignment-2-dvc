@@ -10,8 +10,12 @@ def get_features(dataset: pd.DataFrame) -> pd.DataFrame:
     )
 
     # Uncomment to add features
-    # features['sepal_length_to_sepal_width'] = features['sepal_length'] / features['sepal_width']
-    # features['petal_length_to_petal_width'] = features['petal_length'] / features['petal_width']
+    # features['sepal_length_to_sepal_width'] = (
+    #     features['sepal_length'] / features['sepal_width']
+    # )
+    # features['petal_length_to_petal_width'] = (
+    #     features['petal_length'] / features['petal_width']
+    # )
 
     return features
 

@@ -22,7 +22,7 @@ def evaluate_model() -> dict[str, Any]:
     X: np.ndarray = test_dataset.drop("target", axis=1).values
 
     # Load trained model
-    clf = joblib.load("data/model.joblib")
+    clf = joblib.load("models/model.joblib")
 
     # Make predictions
     prediction: np.ndarray = clf.predict(X)

@@ -7,7 +7,7 @@ requires-python = ">=3.11.6"
 
 # Core dependencies needed to run the project
 dependencies = [
-    
+
     "dvc>=3.59.2",
     "joblib>=1.5.1",
     "pandas>=2.2.3",
@@ -22,6 +22,8 @@ dev = [
     "ruff>=0.11.11",
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
+    "pre-commit>=4.2.0",
+    "detect-secrets>=1.5.0",
 ]
 
 [tool.ruff]
@@ -60,6 +62,31 @@ warn_unused_ignores = true     # Warn about '# type: ignore' comments that are n
 warn_no_return = true          # Warn if a function doesn't return when it should (or vice-versa)
 warn_unreachable = true        # Warn about code that can never be executed
 strict_equality = true         # Enforce stricter type checking for equality operations
+
+# Fix module path issues
+explicit_package_bases = true
+namespace_packages = true
+
+# Handle missing imports gracefully for MLOps libraries
+ignore_missing_imports = true
+
+# Exclude problematic directories
+exclude = [
+    "^build/",
+    "^dist/",
+    "^\\.venv/",
+    "^\\.git/",
+]
+
+# Specific overrides for ML libraries without type stubs
+[[tool.mypy.overrides]]
+module = [
+    "sklearn.*",
+    "joblib.*",
+    "pandas.*",
+    "numpy.*",
+]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 # Pytest is a popular Python testing framework.

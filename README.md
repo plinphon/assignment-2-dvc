@@ -53,7 +53,7 @@ mlops-get-started-iris/
     ```bash
     # Using uv (recommended)
     uv sync
-    
+
     # Or using make
     make install
     ```
@@ -84,16 +84,6 @@ python src/evaluate.py
 make run-pipeline
 ```
 
-### Option 3: Using DVC (Recommended for MLOps)
-
-```bash
-# Run the entire pipeline
-dvc repro
-
-# Run specific stage
-dvc repro train
-```
-
 ## Development Workflow
 
 ### Code Quality
@@ -121,14 +111,6 @@ make test
 # Run tests with coverage
 make test-cov
 ```
-
-### Configuration
-
-The pipeline is configured via `config.yaml`. Key parameters:
-
-- **Data splitting**: `data.test_size`, `data.random_state`
-- **Model parameters**: `model.parameters.*`
-- **File paths**: `paths.*`
 
 ## MLOps Features
 
