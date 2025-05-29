@@ -3,6 +3,9 @@ from sklearn.datasets import load_iris
 
 
 def get_features(dataset: pd.DataFrame) -> pd.DataFrame:
+    """
+    Get the features from the dataset.
+    """
     features = dataset.copy()
     # Rename columns: replace (cm) and spaces
     features.rename(
