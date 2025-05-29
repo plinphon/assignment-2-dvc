@@ -1,29 +1,25 @@
 <!-- .github/PULL_REQUEST_TEMPLATE.md -->
-<!--
+<!-- INSTRUCTION FOR STUDENT:
 Thank you for submitting your assignment!
-
 Please fill out this template carefully. It helps your peer reviewer and instructor understand your work and provide effective feedback.
 -->
 
 ## Assignment: [COURSE_CODE] - Assignment [X]: [Assignment Title]
 
-<!--
-**Instructions for Student:**
+<!--INSTRUCTION FOR STUDENT:
 1. Replace `[COURSE_CODE]` with your course code (e.g., DS413BKK).
 2. Replace `[X]` with the assignment number (e.g., 1, 2, 3).
 3. Replace `[Assignment Title]` with the specific title of this assignment (e.g., "Data and Model Versioning with DVC").
 -->
 
 **Student Name:** [Your Full Name]
-
 **GitHub Username:** @[YourGitHubUsername]
 
 ---
 
 ### 📝 Summary of Changes
 
-<!--
-**Instructions for Student:**
+<!--INSTRUCTION FOR STUDENT:
 Briefly (2-3 sentences) describe the main tasks you completed and the key MLOps tools/concepts you applied in this assignment.
 Example: "Initialized DVC for the project, added the Iris dataset and the trained model (model.joblib) to DVC tracking. This allows for versioning of data and model artifacts alongside code."
 -->
@@ -35,8 +31,7 @@ Example: "Initialized DVC for the project, added the Iris dataset and the traine
 
 ### ✅ Deliverables Checklist
 
-<!--
-**Instructions for Student:**
+<!--INSTRUCTION FOR STUDENT:
 Review the assignment requirements and check off the items you have completed and are included in this Pull Request. Add or remove items if the assignment has specific deliverables not listed here.
 -->
 
@@ -51,28 +46,20 @@ Review the assignment requirements and check off the items you have completed an
 
 ### 🤔 Reflection Questions & Answers
 
-<!--
-**Instructions for Student:**
+<!--INSTRUCTION FOR STUDENT:
 Copy the specific reflection questions for THIS assignment from the assignment instructions document.
 Answer each question thoroughly below it.
+Add more questions as needed for the specific assignment
 -->
 
 Question 1: [Paste Assignment-Specific Question 1 Here]
-
-- [Your Answer Here]
-
-Question 2: [Paste Assignment-Specific Question 2 Here]
-
-- [Your Answer Here]
-
-<!-- Add more questions as needed for the specific assignment -->
+Your answer here
 
 ---
 
 ### 📸 Screenshots / Outputs (if applicable)
 
-<!--
-**Instructions for Student:**
+<!--INSTRUCTION FOR STUDENT:
 If the assignment requires visual proof of completion (e.g., MLflow UI, API /docs page, terminal output), embed screenshots here or provide links.
 Make sure images are accessible. You can drag-and-drop images directly into the GitHub PR editor.
 
@@ -87,8 +74,8 @@ Example:
 -->
 
 ### ❓ Questions / Blockers / Points for Reviewer
-<!--
-**Instructions for Student:**
+
+<!--INSTRUCTION FOR STUDENT:
 Use this space to:
 - Ask any specific questions you have for your peer reviewer or the instructor.
 - Mention any parts of the assignment you found particularly challenging or where you're unsure about your approach.
@@ -96,10 +83,11 @@ Use this space to:
 -->
 
 ### 🙋 Self-Review Checklist (Before Submitting for Peer or Instructor Review)
-<!--
-**Instructions for Student:**
+
+<!--INSTRUCTION FOR STUDENT:
 Go through this checklist before requesting a review. This helps catch common issues and improves the quality of your submission.
 -->
+
 - [ ] Assignment Requirements: I have re-read the assignment requirements and believe my submission meets them.
 - [ ] Code Functionality: I have tested the core functionality of my changes locally.
 - [ ] Code Quality Tools:
